@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Conference ticket generator</title>
+</head>
+<body>
+  <header>
+    <img src="assets/images/logo-full.svg" alt="Coding Conf logo" class="logo">
+    <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <h2>Secure your spot at next year's biggest coding conference.</h2>
+  </header>
+
+  <main>
+    <form action="submit">
+    <label for="dropZone">Upload Avatar</label>
+    <div id="dropZone" class="drop-zone">
+      <img src="assets/images/icon-upload.svg" alt="upload icon" class="upload-icon">
+      <p>Drag and drop or click to upload</p>
+      <input type="file" id="file" class="file" accept="image/png, image/jpeg"
+      required hidden>
+    </div>
+    <div class="upload-info">
+      <img src="assets/images/icon-info.svg" alt="info icon" class="info-icon">
+      <p class="info-text">
+        Upload your photo (JPG or PNG, max size: 500KB).
+      </p>
+    </div>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" required
+    placeholder="example@email.com">
+
+    <label for="github">Github Username</label>
+    <input type="text" required
+    placeholder="@yourusername">
+
+    <input type="submit" value="Generate My Ticket" class="submit-btn">
+  </form>
+  </main>
+  
+  <!-- background elements -->
+  <img src="./assets/images/pattern-lines.svg" aria-hidden="true" class="bg-lines">
+  <img src="./assets/images/pattern-circle.svg" aria-hidden="true" class="bg-circle">
+  <img src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" aria-hidden="true" class="bg-bottom">
+  <img src="./assets/images/pattern-squiggly-line-top.svg" aria-hidden="true" class="bg-top">
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">kewlinnn</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
